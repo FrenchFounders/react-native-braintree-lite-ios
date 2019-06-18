@@ -9,7 +9,11 @@
 }
 RCT_EXPORT_MODULE()
 
-RCT_REMAP_METHOD(show, showDropIn:(NSString *)clientTokenOrTokenizationKey resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
+RCT_REMAP_METHOD(
+                 show,
+                 showWithOptions:(NSDictionary*)options
+                 resolver:(RCTPromiseResolveBlock)resolve
+                 rejecter:(RCTPromiseRejectBlock)reject)
 {
     self.resolve = resolve;
     
@@ -63,7 +67,7 @@ RCT_REMAP_METHOD(show, showDropIn:(NSString *)clientTokenOrTokenizationKey resol
     }
     
     request.venmoDisabled = YES;
-    request.paypalDisabled = YES;    
+    request.paypalDisabled = YES;
     
     BTDropInController *dropIn = [[BTDropInController alloc] initWithAuthorization:clientToken request:request handler:^(BTDropInController * _Nonnull controller, BTDropInResult * _Nullable result, NSError * _Nullable error) {
         [self.reactRoot dismissViewControllerAnimated:YES completion:nil];
