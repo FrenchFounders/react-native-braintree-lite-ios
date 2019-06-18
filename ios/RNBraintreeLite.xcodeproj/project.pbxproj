@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C7FF4F88979CAC348A67C28 /* libPods-RNBraintreeLite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 771F6367C0CADD0B3343AF01 /* libPods-RNBraintreeLite.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RNBraintreeLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNBraintreeLite.m */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C7FF4F88979CAC348A67C28 /* libPods-RNBraintreeLite.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +119,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
