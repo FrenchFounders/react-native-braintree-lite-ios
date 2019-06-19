@@ -10,6 +10,12 @@
 #import "BraintreeCore.h"
 #import "BraintreeDropIn.h"
 
+// A tester
+#import "BTCardNonce.h"
+#import "BTDataCollector.h"
+
+#import "BraintreeApplePay.h"
+
 @interface RNBraintreeLite : NSObject <RCTBridgeModule>
 
 @property (nonatomic, strong) UIViewController *_Nonnull reactRoot;
