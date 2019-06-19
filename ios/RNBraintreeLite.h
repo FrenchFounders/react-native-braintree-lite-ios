@@ -10,8 +10,6 @@
 #import "BraintreeCore.h"
 #import "BraintreeDropIn.h"
 
-#import "BraintreeApplePay.h"
-
 @interface RNBraintreeLite : NSObject <RCTBridgeModule>
 
 
